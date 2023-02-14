@@ -90,6 +90,34 @@ a {
 	margin-bottom:15px;
 }
 
+.button-sp {
+	margin-top:10px;
+	margin-left:30px;
+	margin-right:30px;
+	border-color:green;
+	background-color:green;
+	border-width:2px;
+	border-style: solid;
+	padding: 8px 30px;
+	border-radius: 30px;
+	color:green;
+	text-decoration:none;
+}
+
+.button-am {
+	margin-top:10px;
+	margin-left:30px;
+	margin-right:30px;
+	border-color:lightpink;
+	background-color:lightpink;
+	border-width:2px;
+	border-style: solid;
+	padding: 8px 30px;
+	border-radius: 30px;
+	color:lightpink;
+	text-decoration:none;
+}
+
 .button-bc {
 	margin-top:10px;
 	margin-left:30px;
