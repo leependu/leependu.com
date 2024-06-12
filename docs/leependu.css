@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS DOCUMENT */
+
+html, html * {font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";}
+body {background-color:palegreen;}
+/* h1 for leependu.com */h1 {color:mediumpurple;font-size:70px;font-weight:bold;text-align:left;}
+/* h2 for general text */h2 {color:dimgray;text-align:center;}
+/* h3 for other projects */h3 {color:white;font-size:28px;text-align:center;}
+/* h4 for horsefriends.art */h4 {color:orangered;font-size:40px;font-weight:bold;text-align:left;}
+/* h5 for footer text */h5 {color:dimgray;text-align:left;}
+/* h6 for section title */h6 {color:rebeccapurple;font-size:56px;font-weight:bold;text-align:left;}
+/* h7 for annotation */h7 {color:dimgray;font-size:16px;text-align:center;}
+/* h8 for album title */h8 {color:mediumpurple;font-size:56px;font-weight:bold;text-align:left;}
+/* h9 for album release date */h9 {color:mediumpurple;font-size:22px;font-weight:normal;font-style:italic;text-align:left;}
+.logo {
+	width:80px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;	
+}
+.btn {
+	color:white;
+	border-width:2px;
+	border-style: solid;
+	margin:10px 20px 20px;
+}
+.btn-spotify {
+	border-color:green;
+	background-color:green;
+}
+.btn-apple {
+	border-color:lightpink;
+	background-color:lightpink;
+}
+.btn-bandcamp {
+	border-color:cadetblue;
+	background-color:cadetblue;
+}
+.btn-soundcloud {
+	border-color:darkorange;
+	background-color:darkorange;
+}
+.btn-instagram {
+	border-color:deeppink;
+	background-color:deeppink;
+}
+.btn-tiktok {
+	border-color:dimgray;
+	background-color:dimgray;
+}
+.btn-home {
+	border-color:rebeccapurple;
+	background-color:rebeccapurple;
+	padding:20px 60px;
+}
+.btn-section {
+	border-color:mediumpurple;
+	background-color:mediumpurple;
+	padding:20px 60px;
+}
+.art {width:400px;}
+.i-frame {width:392px;}
+.yt-i-frame {width:75%;}
+.annotation {width:25%;}
+.embed-stuff {display:block;margin-top:15px;margin-right:auto;margin-bottom:15px;margin-left:auto;}
+.other-projects {
+	background-color:goldenrod;
+	border-radius:30px;
+	padding:20px 20px 20px 20px;
+}
+.horse-friends {
+	background-color:skyblue;
+	border-radius:30px;
+	padding:5px 10px 20px 10px;
+}
+.kunekunes {padding:20px 10px 20px 10px;}
