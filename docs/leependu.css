@@ -1,12 +1,81 @@
 @charset "utf-8";
-/* CSS DOCUMENT */
 
+/* === BODY === */
 body {
-    background-color: #FFFFEE;
-    font-family: "MS PGothic", "Verdana", sans-serif;
+    background: #FFFFEE linear-gradient(to bottom, #EAD6C8 0%, #FFFFEE 200px) top center no-repeat;
+    background-size: 100% 200px;
+    color: #800000;
+    font-family: arial, helvetica, sans-serif;
     font-size: 10pt;
+    margin: 5px 0 0;
+    padding: 0 5px;
 }
 
+/* === LINKS === */
+a, a:visited {
+    color: #00E;
+}
+
+a:hover {
+    color: red !important;
+}
+
+/* === BOARD NAVIGATION (header + footer) === */
+#boardNavDesktop,
+#boardNavDesktopFoot {
+    font-size: 9pt;
+    color: #B86;
+    display: block;
+}
+
+#boardNavDesktopFoot {
+    clear: both;
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+
+#boardNavDesktop a,
+#boardNavDesktopFoot a {
+    font-weight: normal;
+    padding: 1px;
+    text-decoration: none;
+    color: #800000;
+}
+
+/* === BOARD BANNER === */
+.boardBanner {
+    text-align: center;
+    clear: both;
+}
+
+.boardBanner img.title {
+    border: 1px solid #800;
+    margin: 5px 0;
+    width: 300px;
+    height: 100px;
+    max-width: 100%;
+}
+
+.boardBanner > .boardTitle {
+    font-family: Tahoma, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    margin-top: 0;
+}
+
+.boardBanner > .boardSubtitle {
+    font-size: x-small;
+}
+
+/* === HR === */
+hr {
+    border: none;
+    border-top: 1px solid #D9BFB7;
+    height: 0;
+}
+
+/* === POSTS (general) === */
 .post {
     margin: 4px 0;
     overflow: hidden;
@@ -16,41 +85,174 @@ body {
     display: block;
 }
 
+.postInfo input[type="checkbox"] {
+    margin: 0 2px;
+}
+
 .name {
     color: #117743;
     font-weight: bold;
 }
 
-.dateTime {
-    color: #000000;
-}
-
-.postNum {
-    color: #000000;
-}
-
 .subject {
-    color: #0F0C5D;
+    color: #cc1105;
     font-weight: bold;
 }
 
+.dateTime {
+    color: inherit;
+}
+
+.postNum a {
+    text-decoration: none;
+    color: #800000;
+}
+
+.postNum a:hover {
+    color: red !important;
+}
+
+/* === REPLY CARDS === */
+.post.reply {
+    background-color: #f0e0d6;
+    border: 1px solid #D9BFB7;
+    border-left: none;
+    border-top: none;
+    display: table;
+    padding: 2px;
+}
+
+.post.reply .postInfo {
+    padding: 2px;
+}
+
+.post.reply blockquote {
+    margin: 4px 8px 4px 16px;
+}
+
+/* === BLOCKQUOTE === */
 blockquote {
     margin: 1em 1em 1em 2em;
     padding: 0;
-    color: #000000;
+    color: inherit;
 }
 
-/* green text */
+/* === GREEN TEXT === */
 .quote {
     color: #789922;
 }
 
-/* reply link */
+/* === QUOTELINKS === */
 .quotelink {
-    color: #DD0000;
+    color: #000080 !important;
     text-decoration: none;
 }
 
 .quotelink:hover {
+    color: red !important;
     text-decoration: underline;
+}
+
+/* === FILE / THUMBNAIL === */
+.file {
+    display: block;
+}
+
+.fileThumb {
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.fileThumb img {
+    border: none;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.post.reply .fileThumb {
+    float: none;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.post.reply .fileThumb img {
+    max-width: 125px;
+    max-height: 125px;
+}
+
+/* === EMBED === */
+.embedLink {
+    font-size: x-small;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #000080;
+    text-decoration: none;
+}
+
+.embedLink:hover {
+    color: red;
+}
+
+.embedContainer {
+    display: none;
+    margin: 8px 0;
+    clear: both;
+}
+
+.embedContainer.visible {
+    display: block;
+}
+
+.embedContainer iframe {
+    border: none;
+    max-width: 100%;
+}
+
+/* === ABSBOT (footer disclaimer) === */
+#absbot {
+    text-align: center;
+    font-size: x-small !important;
+    padding-bottom: 4px;
+    padding-top: 10px;
+    color: #800;
+    clear: both;
+}
+
+.absBotDisclaimer {
+    color: #800;
+}
+
+/* === MOBILE === */
+@media only screen and (max-width: 480px) {
+    .boardBanner img.title {
+        width: 150px;
+        height: 50px;
+    }
+
+    .boardBanner > .boardTitle {
+        font-size: 22px;
+    }
+
+    .post.reply {
+        display: block;
+    }
+
+    blockquote {
+        margin: 10px !important;
+    }
+
+    .fileThumb {
+        margin-left: 5px !important;
+        margin-right: 10px !important;
+    }
+
+    .fileThumb img {
+        max-width: 100px !important;
+        max-height: 100px !important;
+    }
 }
