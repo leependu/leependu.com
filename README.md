@@ -1,4 +1,4 @@
-# <img src="./docs/images/leependu.ico" width="36" height="36"> leependu.com.git
+# <img src="./docs/images/favicon.ico" width="36" height="36"> leependu.com.git
 
 `GitHub Pages` -> [leependu.com](https://leependu.com)
 
