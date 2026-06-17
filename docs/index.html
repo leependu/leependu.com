@@ -5,8 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>leependu.com</title>
-    <link href="leependu.css" rel="stylesheet">
+    <link id="themeStylesheet" href="blueboard.css" rel="stylesheet">
     <link href="images/favicon.ico" rel="icon">
+    <script>
+    (function () {
+        var themes = { yotsuba: 'yotsuba.css', blueboard: 'blueboard.css', tomorrow: 'tomorrow.css' };
+        var saved = localStorage.getItem('theme');
+        var current = themes[saved] ? saved : 'blueboard';
+        document.getElementById('themeStylesheet').href = themes[current];
+        document.addEventListener('DOMContentLoaded', function () {
+            var sel = document.getElementById('themeSwitcher');
+            if (!sel) return;
+            sel.value = current;
+            sel.addEventListener('change', function () {
+                var t = sel.value;
+                document.getElementById('themeStylesheet').href = themes[t];
+                localStorage.setItem('theme', t);
+            });
+        });
+    })();
+    </script>
     <!-- Google Analytics tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GF00E8FZ57"></script>
     <script>
@@ -35,6 +53,13 @@
         </a> ] [
         <a href="https://horsefriends.art" title="horsefriends.art">horsefriends.art
         </a> ]
+        <span class="themeSwitcher">[
+            <select id="themeSwitcher" title="Theme">
+                <option value="yotsuba">Yotsuba</option>
+                <option value="blueboard">Yotsuba B</option>
+                <option value="tomorrow">Tomorrow</option>
+            </select> ]
+        </span>
     </div>
     <div class="boardBanner">
         <a href="https://leependu.com">
